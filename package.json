@@ -1,7 +1,7 @@
 {
-  "name": "fifth_lesson_front_end_web",
+  "name": "seventh_lesson_front_end_web",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "axios": "^0.19.0",
     "prop-types": "^15.7.2",
