@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import {
   MdRemoveCircleOutline,
   MdAddCircleOutline,
   MdDelete,
 } from 'react-icons/md';
 
-import { formatPricePtBr } from '../../util/format';
 import { Container, ProductTable, Total } from './styles';
 
 function Cart({ cart }) {
@@ -27,10 +27,7 @@ function Cart({ cart }) {
           {cart.map(product => (
             <tr>
               <td>
-                <img
-                  src={product.image}
-                  alt={product.title}
-                />
+                <img src={product.image} alt={product.title} />
               </td>
               <td>
                 <strong>{product.title}</strong>
@@ -71,6 +68,12 @@ function Cart({ cart }) {
     </Container>
   );
 }
+
+Cart.propTypes = {
+  cart: PropTypes.shape({
+    map: PropTypes.func,
+  }).isRequired,
+};
 
 const mapStateToProps = state => ({
   cart: state.cart,
