@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import { MdShoppingBasket } from 'react-icons/md';
-
 import { Container, Cart } from './styles';
-
 import logo from '../../assets/images/logo.svg';
 
 function Header({ cartItemsCount }) {
@@ -25,6 +24,10 @@ function Header({ cartItemsCount }) {
     </Container>
   );
 }
+
+Header.propTypes = {
+  cartItemsCount: PropTypes.number.isRequired,
+};
 
 export default connect(state => ({
   cartItemsCount: state.cart.length,
