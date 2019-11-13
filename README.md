@@ -1,4 +1,4 @@
-# RocketSeatBootCamp - SeventhLesson ReactJS 
+# RocketSeatBootCamp - Seventh&Eighth Lesson - ReactNative w/Redux (Flux Architecture) & Hooks 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -69,4 +69,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-# seventh_lesson_front_end_web
+# seventh-eighth_lesson_front_end_web
